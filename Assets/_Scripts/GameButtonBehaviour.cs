@@ -19,6 +19,7 @@ public class GameButtonBehaviour : MonoBehaviour
 
     public void OnClicked_Win()
     {
+        FindObjectOfType<AudioManager>().PlaySound("ButtonSelect");
         SceneManager.LoadScene("Win");
     }
 

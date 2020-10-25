@@ -8,7 +8,7 @@ public class StartButtonBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        FindObjectOfType<AudioManager>().PlaySound("StartMusic");
     }
 
     // Update is called once per frame
@@ -20,6 +20,7 @@ public class StartButtonBehaviour : MonoBehaviour
     public void OnClicked()
     {
         Debug.Log("Clicked Start");
+        FindObjectOfType<AudioManager>().StopPlaying("StartMusic");
         SceneManager.LoadScene("Play");
     }
 }

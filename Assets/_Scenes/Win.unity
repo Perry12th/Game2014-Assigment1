@@ -172,7 +172,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2303574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f04e1fb13c6403b42ac50c8e9173fba9, type: 3}
+  m_Script: {fileID: 11500000, guid: c29b5be0574582c4a9f7c535a23a400a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2303577
@@ -219,7 +219,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2303576}
-        m_TargetAssemblyTypeName: StartButtonBehaviour, Assembly-CSharp
+        m_TargetAssemblyTypeName: PlayAgainButtonBehaviour, Assembly-CSharp
         m_MethodName: OnClicked
         m_Mode: 1
         m_Arguments:
@@ -552,7 +552,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Win Scene
+  m_text: You Made it!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 27d378f17d488b84bbe450298c26a397, type: 2}
   m_sharedMaterial: {fileID: 5657535730907507733, guid: 27d378f17d488b84bbe450298c26a397, type: 2}
@@ -1034,8 +1034,9 @@ GameObject:
   - component: {fileID: 939267673}
   - component: {fileID: 939267675}
   - component: {fileID: 939267674}
+  - component: {fileID: 939267676}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,6 +1158,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939267672}
   m_CullTransparentMesh: 0
+--- !u!114 &939267676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939267672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c41eba9dda23cb499321420009aeace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 939267674}
 --- !u!1 &945241632
 GameObject:
   m_ObjectHideFlags: 0

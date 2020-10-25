@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8712402350557146000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126467916302675930}
+  - component: {fileID: 1474752552326076052}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2126467916302675930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8712402350557146000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1474752552326076052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8712402350557146000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac79ad326a2fa6746b2cc111c37570a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: StartMusic
+    clip: {fileID: 8300000, guid: 96330fbc9498bfd45b9948ee0d16c012, type: 3}
+    volume: 0.541
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: PlayMusic
+    clip: {fileID: 8300000, guid: 6f02d553b4e8a69468a440be2853f0bf, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: EndMusic
+    clip: {fileID: 8300000, guid: 018506c6848063640bee1ebe6c63ce14, type: 3}
+    volume: 0.51
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: FireBullet
+    clip: {fileID: 8300000, guid: 3137ff1730c55794daaef6c0d0561cab, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DamagePlayer
+    clip: {fileID: 8300000, guid: 01301782905cf5742aa7c31e21b30d79, type: 3}
+    volume: 0.51
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: GainPowerUp
+    clip: {fileID: 8300000, guid: dd630795e43dafe408e8eb1a24063b09, type: 3}
+    volume: 0.51
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ButtonSelect
+    clip: {fileID: 8300000, guid: 7113e1451a3ec1f47934296f5b3e1056, type: 3}
+    volume: 0.51
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: a588d479ef565194bb1780ab24afc80e, type: 3}
+    volume: 0.51
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

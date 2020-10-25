@@ -8,17 +8,14 @@ public class LoseButtonBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        FindObjectOfType<AudioManager>().PlaySound("EndMusic");
     }
 
     public void OnClicked()
     {
+        FindObjectOfType<AudioManager>().StopPlaying("EndMusic");
         SceneManager.LoadScene("Start");
     }
+
+   
 }
